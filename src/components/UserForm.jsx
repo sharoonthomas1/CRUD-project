@@ -3,12 +3,11 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-// Validation schema using Yup
 const schema = yup.object().shape({
   name: yup.string().required('Name is required').min(3, 'Minimum 3 characters'),
   email: yup.string().email('Invalid email format').required('Email is required'),
   phone: yup.string().required('Phone is required'),
-  address: yup.string().required('Address is required'), // Add validation for address
+  address: yup.string().required('Address is required'), 
 });
 
 const UserForm = ({ onSubmit, editingUser }) => {
