@@ -30,7 +30,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
             <input 
               type="text" 
               id="name" 
-              className={`border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.name ? 'border-red-500' : 'border-gray-300'}`} 
+              className={`border text-[#fff] text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.name ? 'border-red-500' : 'border-gray-300'}`} 
               placeholder="Name" 
               required 
               {...register('name')}
@@ -42,7 +42,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
             <input 
               type="email" 
               id="email" 
-              className={`border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.email ? 'border-red-500' : 'border-gray-300'}`} 
+              className={`border text-[#fff] text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.email ? 'border-red-500' : 'border-gray-300'}`} 
               placeholder="name@gmai.com" 
               required 
               {...register('email')}
@@ -56,7 +56,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
             <input 
               type="text" 
               id="phone" 
-              className={`border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.phone ? 'border-red-500' : 'border-gray-300'}`} 
+              className={`border text-[#fff]text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.phone ? 'border-red-500' : 'border-gray-300'}`} 
               placeholder="xxxxx" 
               required 
               {...register('phone')}
@@ -68,7 +68,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
             <input 
               type="text" 
               id="address" 
-              className={`border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.address ? 'border-red-500' : 'border-gray-300'}`} 
+              className={`border text-[#fff] text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.address ? 'border-red-500' : 'border-gray-300'}`} 
               placeholder="Address" 
               required 
               {...register('address')}
