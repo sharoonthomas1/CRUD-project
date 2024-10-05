@@ -27,7 +27,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
       <div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mb-5'>
           <div>
-            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name</label>
             <input 
               type="text" 
               id="name" 
@@ -39,12 +39,12 @@ const UserForm = ({ onSubmit, editingUser }) => {
             {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
           </div>
           <div>
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
             <input 
               type="email" 
               id="email" 
               className={`border text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-transparent ${errors.email ? 'border-red-500' : 'border-gray-300'}`} 
-              placeholder="name@flowbite.com" 
+              placeholder="name@gmai.com" 
               required 
               {...register('email')}
             />
@@ -53,7 +53,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mb-5'>
           <div>
-            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone</label>
+            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone No.</label>
             <input 
               type="text" 
               id="phone" 
@@ -65,7 +65,7 @@ const UserForm = ({ onSubmit, editingUser }) => {
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
           </div>
           <div>
-            <label htmlFor="address" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your address</label>
+            <label htmlFor="address" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
             <input 
               type="text" 
               id="address" 
