@@ -9,7 +9,7 @@ const UserTable = ({ users, onEdit, onDelete }) => {
     }
   };
 
-  // Filter users based on the search term
+
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -33,7 +33,7 @@ const UserTable = ({ users, onEdit, onDelete }) => {
         className="border-0 bg-transparent py-2 px-2 w-full text-xs placeholder-gray-500 text-[#fff] focus:outline-none"
         placeholder="Search by name..."
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} // Update search term on input change
+        onChange={(e) => setSearchTerm(e.target.value)} 
         aria-label="Search"
       />
     </div>
