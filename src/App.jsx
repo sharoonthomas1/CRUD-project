@@ -27,7 +27,7 @@ const App = () => {
     fetchUsers();
   }, []);
 
-  const createUser = async (user, reset) => { // Accept reset as a parameter
+  const createUser = async (user, reset) => { 
     try {
       const response = await fetch('https://jsonplaceholder.typicode.com/users', {
         method: 'POST',
@@ -90,11 +90,11 @@ const App = () => {
     }
   };
 
-  const handleSubmit = (data, reset) => { // Accept reset as a parameter
+  const handleSubmit = (data, reset) => { 
     if (editingUser) {
       updateUser({ ...data, id: editingUser.id });
     } else {
-      createUser(data, reset); // Pass reset to createUser
+      createUser(data, reset); 
     }
   };
 
